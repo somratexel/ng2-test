@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-dark bg-inverse">
+  <button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation"></button>
+  <a class="navbar-brand" href="#">Project name</a>
+  <div id="navbar">
+    <nav class="nav navbar-nav float-xs-left">
+      <a class="nav-item nav-link" uiSref="hello" uiSrefActive="active">Hello</a>
+      <a class="nav-item nav-link" uiSref="about" uiSrefActive="active">About</a>
+      <a class="nav-item nav-link" uiSref="people" uiSrefActive="active">People</a>
+      <a class="nav-item nav-link" uiSref="dashboard.profile" uiSrefActive="active">Dashboard</a>
+    </nav>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <ui-view></ui-view>
+  </div>
+</div>
+
